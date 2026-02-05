@@ -1,0 +1,57 @@
+* {
+    /* outline: 2px solid purple; */
+}
+
+body {
+    /* Adjust view */
+    height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+
+    /* Adjust colors and fonts */
+    background-color: hsl(0, 0%, 10%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animated-text {
+    
+    color: hsl(0, 0%, 95%);
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.top {
+    font-size: 1.6rem;
+    font-family: cursive;
+}
+
+.middle {
+    font-size: 18px;
+    font-family: "The Girl Next Door", cursive;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+    font-size: 16px;
+    font-family: "The Girl Next Door", cursive;
+    gap: 14px; 
+}
+
+#yes, #no {
+    border: 2px solid white;
+    padding: 10px;
+}
+
+span {
+    color: hsl(0, 100%, 60%);
+}
